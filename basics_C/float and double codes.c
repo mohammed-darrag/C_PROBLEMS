@@ -108,3 +108,71 @@ int main()
 
    return 0;
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   double n1=10;
+   double x=n1/3;
+   double y=10.0/3;
+   if(x==y)
+   {
+       printf("true\n");  // true because all values permote to double
+   }
+   else
+   {
+       printf("false\n");
+   }
+
+   printf("%f  %lf",x,y);
+
+   return 0;
+}
+
+**********************************************************************************
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   float n1=10;
+   double x=n1/3;
+   double y=10.0/3;
+
+   printf("%d %d %d\n",sizeof(float),sizeof(double),sizeof(5.5));
+   if(10.0/3==x)
+   {
+       printf("true\n");
+   }
+   else
+   {
+      printf("false\n");  //false because 10.0 permote to double and n1/3 permote to float although x is double 
+   }
+
+   return 0;
+}
+
+*****************************************************
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   double n1=10;
+   double x=n1/3;
+   double y=10.0/3;
+
+   printf("%d %d %d\n",sizeof(float),sizeof(double),sizeof(5.5));
+   if(10.0/3==x)
+   {
+       printf("true\n");  // true because all values her permote to double
+   }
+   else
+   {
+      printf("false\n");
+   }
+
+   return 0;
+}
