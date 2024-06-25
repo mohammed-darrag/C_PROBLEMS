@@ -1,15 +1,13 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
-extern int x;
-
+static int x=5;
 
     int f1(int n)
     {
         int i=5;
         i++;
-        printf("f1:=%d  x=%d",i,x);
+        printf("f1:=%d  x=%d \n",i,x);
 
     }
 
@@ -27,7 +25,6 @@ extern int x;
     {
         int i=0;
         printf("main:x=%d   \n",x);
-        x=70;
         f4();
         f3();
         f2();
